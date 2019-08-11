@@ -3,7 +3,7 @@ title: BY Blog
 SEOTitle: 歇尔瓦的博客 | BY Blog
 header-img: img/post-bg-desk.jpg
 email: 歇尔瓦@gmail.com
-description: "Every failure is leading towards success."
+description: "好好学习,天天向上"
 keyword: "BY, BY Blog, 歇尔瓦的博客, 歇尔瓦,"
 url: "http://charlesanjou.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "2333"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -22,7 +22,7 @@ RSS: false
 zhihu_username:     xieerwa
 github_username:    xieerwa
 facebook_username:  xieerwa
-jianshu_username:   e71990ada2fd
+#jianshu_username:   e71990ada2fd
 #twitter_username:   xieerwa
 
 
