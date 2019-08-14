@@ -1,3 +1,4 @@
+---
 layout:     post
 title:     vue初见
 subtitle:   (todolist,组件,生命周期,数据请求)
@@ -6,11 +7,9 @@ author:     xieerwa
 header-img: https://i.pximg.net/img-original/img/2014/01/05/00/08/46/40761311_p0.jpg
 catalog: true
 tags:
-
-    - 前端
-
-	- vue
-
+    - 前端  
+    - vue
+---
 ### todolist
 
 html部分
