@@ -4,7 +4,7 @@ title:     vue初见
 subtitle:   (todolist,组件,生命周期,数据请求)
 date:       2019-08-14
 author:     xieerwa
-header-img: https://i.pximg.net/img-original/img/2014/01/05/00/08/46/40761311_p0.jpg
+header-img: https://i.postimg.cc/zGg7pTqJ/bg.jpg
 catalog: true
 tags:
     - 前端  
