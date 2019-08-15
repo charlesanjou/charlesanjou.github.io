@@ -102,8 +102,14 @@ export default storage;
 
 [参考官方](https://cn.vuejs.org/v2/guide/components.html "vue组件")
 
+#### 父组件给子组件传值
 
+1. 父组件在调用子组件时候绑定动态属性
 
+   ```vue
+   <v-header :title="title"></v-header>
+   ```
+2.在子组件中用 props接受父组件传过来的数据
 ### 生命周期函数
 
 ![vue生命周期](https://cn.vuejs.org/images/lifecycle.png)
@@ -201,7 +207,7 @@ export default storage;
 
 ### vue数据请求
 
-vue-resource 是官方提供的一个vue的插件
+#### vue-resource 是官方提供的一个vue的插件
 
 首先需要在项目中安装vue-resource
 
@@ -240,3 +246,41 @@ methods:{
       }
 ```
 
+#### axios数据请求插件
+
+axios的使用
+
+首先安装
+
+```shell
+npm install axios --save
+或者
+cnpm install axios --save
+```
+
+引用axios,和vue-resource的不同为不用单独在写一个使用
+
+```js
+import Axios from 'Axios' //引入
+```
+
+在组件中使用
+
+```js
+methods:{
+      getDate(){
+           //请求数据
+          var api="http://www.phonegap100.com/appapi.php?a=getPortalList&catid=20&page=1";
+          axios.get(api).then(function(response){
+              console.log(response);
+          },function(err){
+            console.log(err);
+          })
+      }
+```
+
+#### fetch-jsonp数据请求插件(支持jsonp)
+
+[fetch-jsonp github说明](https://github.com/camsong/fetch-jsonp "fetch-jsonp数据请求插件")
+
+ 
