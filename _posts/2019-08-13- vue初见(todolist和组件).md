@@ -110,6 +110,52 @@ export default storage;
    <v-header :title="title"></v-header>
    ```
 2.在子组件中用 props接受父组件传过来的数据
+
+#### 非父子组件传值
+##### 事件广播
+
+```vue
+<button @click="emitHello()">给非父子广播数据</button>
+```
+
+创建一个实例
+
+```js
+import Vue from 'vue'
+
+var vueevent=new Vue()
+
+export default vueevent;
+```
+
+引入到组件中
+
+```vue
+import vueevent from '../model/vueevent.js';
+```
+
+创建方法
+
+```js
+methods:{
+            emitHello(){
+                 vueevent.$emit('to-holle',this.msg)
+            }
+        }
+```
+
+到另外一个组件中引入实例创建一个回调函数
+
+```js
+mounted(){
+    vueevent.$on('to-holle',function(data){
+      console.log(data)
+    })
+  }
+```
+
+
+
 ### 生命周期函数
 
 ![vue生命周期](https://cn.vuejs.org/images/lifecycle.png)
