@@ -99,10 +99,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Apple",
-        href: "https://apple.com"
+        title: "Twitter",
+        href: "https://twitter.com/"
     },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "Vue",
+        href: "https://cn.vuejs.org/"
     }
 ]
