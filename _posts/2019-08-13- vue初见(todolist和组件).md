@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     vue初见
+title:     vue初见(todolist,组件,生命周期,数据请求)
 subtitle:   (todolist,组件,生命周期,数据请求)
 date:       2019-08-14
 author:     xieerwa

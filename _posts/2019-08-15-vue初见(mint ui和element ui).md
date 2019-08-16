@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     vue初见
+title:     vue初见(mint ui和element ui)
 subtitle:   (mint ui和element ui)
 date:       2019-08-16
 author:     xieerwa
