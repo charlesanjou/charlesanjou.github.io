@@ -1,0 +1,60 @@
+---
+layout:     post
+title:     js制作轮播图
+subtitle:   (js基础)
+date:       2019-08-24
+author:     xieerwa
+header-img: img/post-bg-debug.png
+catalog: true
+tags:
+    - 前端  
+    - javascript
+---
+
+### 轮播图方案1
+
+```js
+// 首先通过js来判断图片的数量来生成点的数量
+var carsouselbox = $("#carsouselbox"); // 获取的轮播图的容器
+var piclist = carsouselbox.children // 获取的轮播图片集合
+for(var i=0;i < piclist.length; i++){
+    var liObj = document.createElement('li');
+    liObj.setAttribute("index", i);
+}
+// 通过控制点来控制img的显示
+var index = 0;
+$(".control>li").click(function(){
+    index = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active"); //给当前的添加css
+    piclist.eq(index)fadeIn(600).siblings().fadeOut(); //显示index对应的图片
+});
+// 通过左右箭头来控制
+$(".next").click(function(){
+    index++;
+    if(index>"图片的数量"){
+        index = 0;
+    }
+    $(".control>li").eq(index).addClass("active").siblings().removeClass("active"); //给当前的添加css
+     piclist.eq(index)fadeIn(600).siblings().fadeOut(); //显示index对应的图片
+});
+//设置自动轮播
+function auto() {
+	index++;
+	if (index > cont - 1) {
+		index = 0;
+ 	}
+	$('.bar>li').eq(index).addClass("active").siblings().removeClass("active");
+	('.item').eq(index).fadeIn(600).siblings().fadeOut();
+	console.log("1");
+ 	};
+	var aotuplay = setInterval(auto, 1000);
+	$('.pain').mouseenter(function(){
+		clearInterval(aotuplay);
+	});
+	$('.pain').mouseleave(function(){
+		aotuplay = setInterval(auto, 1000);
+	});
+```
+
+
+
